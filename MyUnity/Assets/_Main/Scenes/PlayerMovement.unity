@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 691429033}
   - component: {fileID: 691429037}
   - component: {fileID: 691429036}
-  - component: {fileID: 691429035}
+  - component: {fileID: 691429038}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -593,27 +593,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691429032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.17, y: -2.14, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &691429035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691429032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bd4b952dbc8cab4d8535c0a96876903, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fuerza: 500000000
-  _rigidbody2D: {fileID: 691429036}
 --- !u!50 &691429036
 Rigidbody2D:
   serializedVersion: 4
@@ -678,6 +664,26 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &691429038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691429032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd4b952dbc8cab4d8535c0a96876903, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  altura: 1.82
+  edad: 30
+  nombre: Roberto
+  puedeVotar: 1
+  gameObject: {fileID: 691429032}
+  rigidbody2D: {fileID: 691429036}
+  collider2D: {fileID: 691429037}
+  spriteRenderer: {fileID: 691429033}
 --- !u!1 &1353754816
 GameObject:
   m_ObjectHideFlags: 0
