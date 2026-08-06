@@ -198,8 +198,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234581441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.71, y: 3.08, z: 0}
-  m_LocalScale: {x: 1.000069, y: 1, z: 1}
+  m_LocalPosition: {x: 4.46, y: -2.92, z: 0}
+  m_LocalScale: {x: 1.000069, y: 2.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1799584853}
@@ -593,12 +593,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691429032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.09, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1353754819}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &691429036
 Rigidbody2D:
@@ -615,7 +616,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -626,7 +627,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &691429037
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -676,14 +677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bd4b952dbc8cab4d8535c0a96876903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  altura: 1.82
-  edad: 30
-  nombre: Roberto
-  puedeVotar: 1
-  gameObject: {fileID: 691429032}
-  rigidbody2D: {fileID: 691429036}
-  collider2D: {fileID: 691429037}
-  spriteRenderer: {fileID: 691429033}
+  _force: 30
+  _speed: 800
+  _rigidbody2D: {fileID: 0}
 --- !u!1 &1353754816
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,13 +765,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353754816}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 691429034}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1353754820
 MonoBehaviour:
@@ -899,7 +895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493746591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.05, y: 2.11, z: 0}
+  m_LocalPosition: {x: -0.84, y: 4.46, z: 0}
   m_LocalScale: {x: 12.818053, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -985,5 +981,5 @@ Transform:
   - {fileID: 384362431}
   - {fileID: 1493746593}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
